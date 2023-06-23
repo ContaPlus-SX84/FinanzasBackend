@@ -6,7 +6,7 @@ import lombok.*;
 
 
 @Entity
-@Table(name = "Gastos")
+@Table(name = "gastos")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

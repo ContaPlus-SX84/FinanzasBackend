@@ -1,25 +1,24 @@
-package com.finanzas.finanzasbackend.finanzas.domain.model.entity;
+package com.finanzas.finanzasbackend.finanzas.resources.frenchMethod;
 
-import jakarta.persistence.*;
-import java.io.Serializable;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.finanzas.finanzasbackend.finanzas.domain.model.entity.User;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.*;
-import java.time.*;
-import java.time.format.*;
 
-import java.io.Serializable;
+import java.time.LocalDate;
 
-@Entity
-@Table(name = "french_method")
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 @With
-public class FrenchMethod implements Serializable{
+@NoArgsConstructor
+@AllArgsConstructor
+public class FrenchMethodResource {
 
-    @Id
+
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
