@@ -31,7 +31,7 @@ public class GastosServiceImpl implements GastosService {
 
     @Override
     public List<Gastos> getId(Long id) {
-        return gastosRepository.findById(id);
+        return gastosRepository.findByFrenchmethodid(id);
     }
 
     @Override

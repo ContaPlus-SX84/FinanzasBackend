@@ -23,42 +23,42 @@ public class FrenchMethod implements Serializable{
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "userid")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private User user;
 
 
-    private Long CuoIni;
+    private Long cuoIni;
 
-    private Long Capi;
+    private Long capi;
 
-    private String Titasa;
+    private String titasa;
 
-    private Long Tasaporce;
+    private Long tasaporce;
 
-    private Long Tiempo;
+    private Long tiempo;
 
-    private String Moneda;
+    private String moneda;
 
-    private Long Diapago;
+    private Long diapago;
 
-    private LocalDate FechaSoli;
+    private LocalDate fechaSoli;
 
-    private String Seguro;
+    private String seguro;
 
-    private LocalDate SegIni;
+    private LocalDate segIni;
 
-    private LocalDate SegFin;
+    private LocalDate segFin;
 
-    private String PeriGracia;
+    private String periGracia;
 
-    private Long PeriMeses;
+    private Long periMeses;
 
-    private String TasaCom;
+    private String tasaCom;
 
-    private Long Tasaporcen;
+    private Long tasaporcen;
 
-    private String RetenNom;
+    private String retenNom;
 
-    private Long Retenporce;
+    private Long retenporce;
 }

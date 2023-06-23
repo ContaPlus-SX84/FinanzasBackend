@@ -8,7 +8,7 @@ import java.util.List;
 public interface GastosService {
     List<Gastos> getAll();
 
-    List<Gastos> getId(Long id);
+    List<Gastos> getFrenchmethodid(Long id);
     Gastos create(Gastos gastos);
 
     ResponseEntity<?> delete(Long id);

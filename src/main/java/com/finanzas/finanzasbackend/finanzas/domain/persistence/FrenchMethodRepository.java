@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface FrenchMethodRepository extends JpaRepository<FrenchMethod, Long> {
 
-    List<FrenchMethod> findById(Long Id);
+    List<FrenchMethod> findByUserid(Long Id);
 }

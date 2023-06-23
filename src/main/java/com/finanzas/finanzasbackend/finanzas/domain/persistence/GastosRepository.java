@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface GastosRepository extends JpaRepository<Gastos, Long> {
-    List<Gastos> findById(Long Id);
+    List<Gastos> findByFrenchmethodid(Long Id);
 }

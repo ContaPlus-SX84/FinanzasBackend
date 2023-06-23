@@ -31,7 +31,7 @@ public class GastosController {
 
     @GetMapping("/getId/{id}")
     public GastosResource getId(@PathVariable Long id){
-        return mapper.toResource(gastosService.getId(id));
+        return mapper.toResource(gastosService.getFrenchmethodid(id));
     }
 
     @PostMapping("/create")

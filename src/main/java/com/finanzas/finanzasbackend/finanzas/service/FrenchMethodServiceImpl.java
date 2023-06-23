@@ -30,7 +30,7 @@ public class FrenchMethodServiceImpl implements FrenchMethodService {
 
     @Override
     public List<FrenchMethod> getId(Long id) {
-        return frenchMethodRepository.findById(id);
+        return frenchMethodRepository.findByUserid(id);
     }
 
     @Override

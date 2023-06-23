@@ -24,9 +24,8 @@ public class Gastos {
 
     private Long Monto;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "frenchMethod_id")
+    @JoinColumn(name = "frenchmethodid")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
-    @MapsId
     private FrenchMethod frenchMethod;
 
 }
