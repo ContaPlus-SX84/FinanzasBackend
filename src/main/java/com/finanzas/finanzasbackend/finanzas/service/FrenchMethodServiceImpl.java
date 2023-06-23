@@ -7,9 +7,11 @@ import com.finanzas.finanzasbackend.finanzas.domain.persistence.UserRepository;
 import com.finanzas.finanzasbackend.finanzas.domain.service.FrenchMethodService;
 import jakarta.validation.Validator;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class FrenchMethodServiceImpl implements FrenchMethodService {
     private static final String ENTITY = "French_method";
     private final FrenchMethodRepository frenchMethodRepository;
@@ -29,7 +31,7 @@ public class FrenchMethodServiceImpl implements FrenchMethodService {
     public FrenchMethod create(FrenchMethod frenchMethod) { return frenchMethodRepository.save(frenchMethod); }
 
     @Override
-    public List<FrenchMethod> getId(Long id) {
+    public List<FrenchMethod> getUserid(Long id) {
         return frenchMethodRepository.findByUserid(id);
     }
 

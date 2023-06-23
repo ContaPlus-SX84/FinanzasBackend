@@ -7,9 +7,7 @@ import java.util.List;
 
 public interface FrenchMethodService {
     List<FrenchMethod> getAll();
-
     List<FrenchMethod> getUserid(Long id);
     FrenchMethod create(FrenchMethod frenchMethod);
-
     ResponseEntity<?> delete(Long id);
 }

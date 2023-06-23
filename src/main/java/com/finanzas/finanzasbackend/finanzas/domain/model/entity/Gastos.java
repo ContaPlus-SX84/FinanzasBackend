@@ -23,6 +23,7 @@ public class Gastos {
     private String Nombre;
 
     private Long Monto;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "frenchmethodid")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})

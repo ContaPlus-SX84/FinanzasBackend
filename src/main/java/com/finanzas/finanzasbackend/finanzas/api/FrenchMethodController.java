@@ -31,7 +31,7 @@ public class FrenchMethodController {
 
     @GetMapping("/getId/{id}")
     public FrenchMethodResource getId(@PathVariable Long id){
-        return mapper.toResource(frenchMethodService.getUserid(id));
+        return (FrenchMethodResource) mapper.toResource(frenchMethodService.getUserid(id));
     }
 
     @PostMapping("/create")

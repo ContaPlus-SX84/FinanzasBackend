@@ -6,6 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface FrenchMethodRepository extends JpaRepository<FrenchMethod, Long> {
-
     List<FrenchMethod> findByUserid(Long Id);
 }

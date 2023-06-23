@@ -27,7 +27,6 @@ public class FrenchMethod implements Serializable{
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private User user;
 
-
     private Long cuoIni;
 
     private Long capi;
