@@ -9,6 +9,8 @@ import lombok.*;
 @AllArgsConstructor
 public class CreateUserResource {
     private String name;
+
     private String username;
+
     private String password;
 }

@@ -7,9 +7,7 @@ import java.util.List;
 
 public interface UserService {
     List<User> getAll();
-
     User authenticate(String username, String password);
     User create(User user);
-
     ResponseEntity<?> delete(Long id);
 }

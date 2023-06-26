@@ -1,6 +1,5 @@
 package com.finanzas.finanzasbackend.finanzas.resources.user;
 
-
 import lombok.*;
 
 @Getter
