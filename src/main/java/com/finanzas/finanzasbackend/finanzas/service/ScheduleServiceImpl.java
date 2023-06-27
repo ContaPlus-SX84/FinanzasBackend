@@ -1,9 +1,7 @@
 package com.finanzas.finanzasbackend.finanzas.service;
 
 import com.finanzas.finanzasbackend.finanzas.domain.model.entity.Schedule;
-import com.finanzas.finanzasbackend.finanzas.domain.model.entity.User;
 import com.finanzas.finanzasbackend.finanzas.domain.persistence.ScheduleRepository;
-import com.finanzas.finanzasbackend.finanzas.domain.persistence.UserRepository;
 import com.finanzas.finanzasbackend.finanzas.domain.service.ScheduleService;
 import jakarta.validation.Validator;
 import org.springframework.http.ResponseEntity;
@@ -26,6 +24,11 @@ public class ScheduleServiceImpl implements ScheduleService {
     @Override
     public List<Schedule> getAll() {
         return scheduleRepository.findAll();
+    }
+
+    @Override
+    public Schedule getByUserId(Long userId) {
+        return scheduleRepository.findByUserId(userId);
     }
 
     @Override

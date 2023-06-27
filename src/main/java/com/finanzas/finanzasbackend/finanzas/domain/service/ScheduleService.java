@@ -7,9 +7,8 @@ import java.util.List;
 
 public interface ScheduleService {
     List<Schedule> getAll();
-
+    Schedule getByUserId(Long userId);
     Schedule create(Schedule schedule);
-
     ResponseEntity<?> delete(Long id);
 }
 

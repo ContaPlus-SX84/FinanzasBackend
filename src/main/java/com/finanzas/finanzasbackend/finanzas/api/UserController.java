@@ -2,6 +2,7 @@ package com.finanzas.finanzasbackend.finanzas.api;
 
 import com.finanzas.finanzasbackend.finanzas.domain.service.UserService;
 import com.finanzas.finanzasbackend.finanzas.mapping.user.UserMapper;
+import com.finanzas.finanzasbackend.finanzas.resources.schedule.ScheduleResource;
 import com.finanzas.finanzasbackend.finanzas.resources.user.CreateUserResource;
 import com.finanzas.finanzasbackend.finanzas.resources.user.UserResource;
 import org.springframework.http.ResponseEntity;
