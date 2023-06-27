@@ -22,5 +22,7 @@ public class UpdateScheduleResource {
 
     private Double tir;
 
+    private Long periodoGracia;
+
     private Long userIdt;
 }

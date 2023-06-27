@@ -32,5 +32,7 @@ public class Schedule implements Serializable {
 
     private Double tir;
 
+    private Long periodoGracia;
+
     private Long userIdt;
 }

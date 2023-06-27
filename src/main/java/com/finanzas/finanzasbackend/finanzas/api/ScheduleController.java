@@ -27,8 +27,8 @@ public class ScheduleController {
     public List<ScheduleResource> getAll(){
         return mapper.toResource(scheduleService.getAll());
     }
-    @GetMapping("/{userid}")
-    public ScheduleResource getByUserId(@PathVariable Long userId) { return mapper.toResource(scheduleService.getByUserId(userId)); }
+    @GetMapping("/{userId}")
+    public List<ScheduleResource> getByUserId(@PathVariable Long userId) { return mapper.toResource(scheduleService.getByUserIdt(userId)); }
 
     @PostMapping("/create")
     public ScheduleResource create(@RequestBody CreateScheduleResource schedule){

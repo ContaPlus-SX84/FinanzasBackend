@@ -24,6 +24,8 @@ public class ScheduleResource {
 
     private Double tir;
 
+    private Long periodoGracia;
+
     private Long userIdt;
 }
 
