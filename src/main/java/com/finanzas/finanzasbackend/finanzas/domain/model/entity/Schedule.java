@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "schedule")
@@ -23,6 +24,8 @@ public class Schedule implements Serializable {
     private Double cuota;
 
     private Double tem;
+
+    private Long tiempo;
 
     private Double saldoInicial;
 

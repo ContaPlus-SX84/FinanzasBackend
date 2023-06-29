@@ -2,6 +2,8 @@ package com.finanzas.finanzasbackend.finanzas.resources.schedule;
 
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @With
@@ -15,6 +17,8 @@ public class ScheduleResource {
     private String name;
 
     private Double tem;
+
+    private Long tiempo;
 
     private Double saldoInicial;
 
